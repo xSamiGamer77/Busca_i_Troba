@@ -1,15 +1,28 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
--->
-<html>
+<html lang="en">
     <head>
-        <title>TODO supply a title</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Estructura d'un joc amb Phaser</title>
+        <meta name="viewport" content="user-scalable=no,  initial-scale=1,  maximum-scale=1,  width=device-width"/>
+        <style>
+            /*El fons del cos (body)) del nostre document html serà de color negre*/
+            body {
+                background: black; /*fons negre*/
+            }
+
+            /*canvas és l'element HTML que farem servir per dibuixar el nostre joc mitjançant Java Script*/
+            canvas {
+                display: block; /*Aquesta propietat fa que l'element <canvas> es mostri com un bloc, el que significa que ocupa tot l'ample disponible i comença en una nova línia.*/
+                margin: 0; /*Estableix el marge de l'element <canvas> a zero, eliminant qualsevol marge predeterminat que pugui tenir.*/
+                position: absolute; /*L'element <canvas> es pot col·locar en qualsevol lloc de la pàgina i no afectarà el disseny d'altres elements.*/
+                top: 50%; /*Aquestes propietats posicionen l'element <canvas> exactament al centre des de la part superior de la finestra*/
+                left: 50%; /*Aquestes propietats posicionen l'element <canvas> exactament al centre de de la part esquerra de la finestra*/
+                transform: translate(-50%, -50%); /*Trasllada l'element <canvas> cap amunt i cap a l'esquerra en relació amb el seu propi tamany, col·locant-lo perfectament centrat tant vertical com horitzontalment*/
+            }
+        </style>
+        <script src="phaser.min.js"></script> <!-- enllaç a la llibreria amb les funcionalitats de Phaser-->
+        <script src="escena_samay.js"></script> <!-- enllaç al nostre script amb les funcionalitats del joc -->
     </head>
     <body>
-        <div>TODO write content</div>
     </body>
 </html>
